@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+:root {
+	--color-primary-green: #54e6af;
+	--color-grey-dark: #2c344b;
+	--color-grey-light-1: #5a668a;
+	--color-grey-light-2: #c2cbe5;
+	--color-black: #121725;
+	--color-white: #fff;
+
+	--font-primary: "Chivo", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: var(--font-primary);
+	color: var(--color-grey-light-2);
+	font-weight: 300;
+	line-height: 1.6;
+
+	background-color: #121725;
+}
