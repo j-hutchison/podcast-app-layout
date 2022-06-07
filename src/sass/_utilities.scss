@@ -8,8 +8,16 @@
 
 .margin-top-lg {
 	margin-top: 6.4rem;
+
+	@media only screen and(max-width: 44em) {
+		margin-top: 3.3rem;
+	}
 }
 
 .w-66 {
 	width: 66%;
+
+	@media only screen and(max-width: 44em) {
+		width: 100%;
+	}
 }

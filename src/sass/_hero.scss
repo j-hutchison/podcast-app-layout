@@ -1,7 +1,6 @@
 .hero {
 	position: relative;
 
-	//TODO SWAP TO GRID
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: repeat(10, 1fr);
@@ -13,11 +12,26 @@
 		margin-left: 0;
 	}
 
+	@media only screen and(max-width: 44em) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		max-width: 100%;
+	}
+
 	&__img {
 		grid-column: 3 / -1;
 		grid-row: 1 / -1;
 
 		overflow: hidden;
+
+		@media only screen and(max-width: 44em) {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 
 	&__bg-img {
@@ -26,9 +40,12 @@
 
 		filter: brightness(90%);
 
-		// @media only screen and(max-width: 60em) {
-		// 	transform: ;
-		// }
+		@media only screen and(max-width: 44em) {
+			opacity: 10%;
+			width: 100vw;
+			height: 100vh;
+			object-fit: cover;
+		}
 	}
 
 	&__content {
@@ -51,9 +68,22 @@
 			grid-column: 1 / span 6;
 			padding-left: 4rem;
 		}
+
+		@media only screen and(max-width: 44em) {
+			background-color: transparent;
+			padding: 2.4rem;
+			padding-top: 15rem;
+			text-align: center;
+
+			min-width: 34.5rem;
+		}
 	}
 
 	&__description {
+		@media only screen and(max-width: 44em) {
+			margin: 0 auto;
+			order: 2;
+		}
 	}
 
 	&__registration {
@@ -72,6 +102,12 @@
 			outline: none;
 			border: none;
 		}
+
+		@media only screen and(max-width: 44em) {
+			order: 4;
+			padding: 2.4rem;
+			font-weight: 400;
+		}
 	}
 
 	&__references {
@@ -87,7 +123,12 @@
 
 			@media only screen and(max-width: 60em) {
 				width: 75%;
+				gap: 2.3rem;
 			}
+		}
+
+		@media only screen and(max-width: 44em) {
+			order: 3;
 		}
 	}
 }
@@ -112,6 +153,17 @@
 		margin-top: 0;
 
 		transition: background-color 0.2s;
+
+		@media only screen and(max-width: 44em) {
+			display: block;
+			position: unset;
+			transform: translateY(0);
+			width: 100%;
+
+			margin-top: 1.6rem;
+			padding: 1.4rem 3.2rem;
+			line-height: 2.8rem;
+		}
 	}
 
 	&-register:hover,
