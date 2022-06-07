@@ -1,0 +1,13 @@
+.container {
+	position: relative;
+	margin: 13rem 16.5rem;
+	margin-right: 0;
+
+	@media only screen and(max-width: 60em) {
+		margin: 0;
+	}
+}
+
+.header {
+	position: absolute;
+}

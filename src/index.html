@@ -21,68 +21,82 @@
 		<title>Frontend Mentor | Pod request access landing page</title>
 	</head>
 	<body>
-		<header class="header">
-			<img
-				src="./assets/desktop/logo.svg"
-				alt="Company logo"
-				class="header__img"
-			/>
-		</header>
-		<main class="hero">
-			<img
-				src="./assets/desktop/image-host.jpg"
-				alt="Image of the podcast host"
-				class="hero__bg-img"
-			/>
-			<div class="hero__content">
-				<h1 class="heading-1">Publish your podcasts everywhere.</h1>
-				<p class="hero__description">
-					Upload your audio to Pod with a single click. We’ll then distribute
-					your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
-					and more!
-				</p>
-				<div class="hero__registration">
-					<input type="email" name="email" id="email" />
-					<button class="register">Request Access</button>
+		<div class="container">
+			<main class="hero">
+				<header class="header">
+					<img
+						src="./assets/desktop/logo.svg"
+						alt="Company logo"
+						class="header__img"
+					/>
+				</header>
+				<div class="hero__content">
+					<h1 class="heading-1">
+						<strong>Publish your podcasts</strong> everywhere.
+					</h1>
+					<p class="hero__description margin-top-sm w-66">
+						Upload your audio to Pod with a single click. We’ll then distribute
+						your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+						Casts and more!
+					</p>
+					<div class="hero__registration margin-top-md w-66">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							class="hero__registration-email"
+							placeholder="Email address"
+						/>
+						<button class="btn btn-register">Request Access</button>
+					</div>
+					<div class="hero__references margin-top-lg">
+						<ul class="hero__references-list">
+							<li>
+								<img
+									src="./assets/desktop/spotify.svg"
+									alt="Spotify Logo"
+									class="hero__references-img"
+								/>
+							</li>
+							<li>
+								<img
+									src="./assets/desktop/apple-podcast.svg"
+									alt="Apple Podcasts"
+									class="hero__references-img"
+								/>
+							</li>
+							<li>
+								<img
+									src="./assets/desktop/google-podcasts.svg"
+									alt="Google Podcasts"
+									class="hero__references-img"
+								/>
+							</li>
+							<li>
+								<img
+									src="./assets/desktop/pocket-casts.svg"
+									alt="Pocketcasts"
+									class="hero__references-img"
+								/>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</main>
-		<footer class="references">
-			<ul class="references__list">
-				<li>
+				<div class="hero__img">
 					<img
-						src="./assets/desktop/spotify.svg"
-						alt="Spotify Logo"
-						class="reference__img"
+						src="./assets/desktop/image-host.jpg"
+						alt="Image of the podcast host"
+						class="hero__bg-img"
 					/>
-				</li>
-				<li>
-					<img
-						src="./assets/desktop/apple-podcast.svg"
-						alt="Apple Podcasts"
-						class="reference__img"
-					/>
-				</li>
-				<li>
-					<img
-						src="./assets/desktop/google-podcasts.svg"
-						alt="Google Podcasts"
-						class="reference__img"
-					/>
-				</li>
-				<li>
-					<img
-						src="./assets/desktop/pocket-casts.svg"
-						alt="Pocketcasts"
-						class="reference__img"
-					/>
-				</li>
-			</ul>
-			<img
-				src="./assets/desktop/bg-pattern-dots.svg"
-				alt="Footer image"
-				class="footer__img"
-			/>
-		</footer>
+				</div>
+			</main>
+			<footer class="footer">
+				<img
+					src="./assets/desktop/bg-pattern-dots.svg"
+					alt="Footer image"
+					class="footer__img"
+				/>
+			</footer>
+		</div>
 	</body>
 </html>

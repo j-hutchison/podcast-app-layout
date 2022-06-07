@@ -1,0 +1,122 @@
+.hero {
+	position: relative;
+
+	//TODO SWAP TO GRID
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+
+	margin-left: auto;
+	max-width: 127.5rem;
+
+	@media only screen and(max-width: 51em) {
+		margin-left: 0;
+	}
+
+	&__img {
+		grid-column: 3 / -1;
+		grid-row: 1 / -1;
+
+		overflow: hidden;
+	}
+
+	&__bg-img {
+		display: block;
+		width: 100vh;
+
+		filter: brightness(90%);
+
+		// @media only screen and(max-width: 60em) {
+		// 	transform: ;
+		// }
+	}
+
+	&__content {
+		grid-column: 2 / span 4;
+		grid-row: 3 / -1;
+
+		display: flex;
+		flex-direction: column;
+
+		position: relative;
+		min-width: 63.5rem;
+		max-width: 72.5rem;
+		padding-top: 8.8rem;
+		padding-right: 5.8rem;
+		background-color: var(--color-black);
+
+		z-index: 10;
+
+		@media only screen and(max-width: 60em) {
+			grid-column: 1 / span 6;
+			padding-left: 4rem;
+		}
+	}
+
+	&__description {
+	}
+
+	&__registration {
+		position: relative;
+
+		&-email {
+			width: 100%;
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: var(--color-grey-light-2);
+			padding: 1.4rem 3.2rem;
+			line-height: 2.8rem;
+
+			background-color: var(--color-grey-dark);
+			border-radius: 2.8rem;
+			outline: none;
+			border: none;
+		}
+	}
+
+	&__references {
+		&-list {
+			list-style: none;
+			display: flex;
+			gap: 4rem;
+			align-items: center;
+		}
+		&-img {
+			filter: brightness(0) saturate(100%) invert(37%) sepia(49%) saturate(317%)
+				hue-rotate(186deg) brightness(94%) contrast(86%);
+
+			@media only screen and(max-width: 60em) {
+				width: 75%;
+			}
+		}
+	}
+}
+
+.btn {
+	font-weight: 600;
+	font-size: 1.4rem;
+	// line-height: 2.8rem;
+
+	&-register {
+		position: absolute;
+		top: 50%;
+		right: 0;
+
+		transform: translateY(-50%);
+
+		background-color: var(--color-primary-green);
+		border: none;
+		border-radius: 2.8rem;
+		padding: 1.4rem 2.7rem;
+		margin: 0.5rem;
+		margin-top: 0;
+
+		transition: background-color 0.2s;
+	}
+
+	&-register:hover,
+	&-register:active {
+		background-color: var(--color-primary-green-light);
+		cursor: pointer;
+	}
+}
