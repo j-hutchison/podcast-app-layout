@@ -23,8 +23,8 @@ body {
   text-transform: uppercase;
   color: var(--color-white);
   font-weight: inherit;
-  font-size: 5.2rem;
-  line-height: 6.2rem;
+  font-size: 4.6rem;
+  line-height: 5.2rem;
 }
 @media only screen and (max-width: 60em) {
   .heading-1 {
@@ -44,7 +44,7 @@ body {
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 2.8rem;
   color: var(--color-grey-light-2);
 }
@@ -137,7 +137,6 @@ p {
 .hero__img {
   grid-column: 3/-1;
   grid-row: 1/-1;
-  overflow: hidden;
 }
 @media only screen and (max-width: 44em) {
   .hero__img {
@@ -148,7 +147,7 @@ p {
 }
 .hero__bg-img {
   display: block;
-  width: 100vh;
+  width: 100%;
   filter: brightness(90%);
 }
 @media only screen and (max-width: 44em) {
